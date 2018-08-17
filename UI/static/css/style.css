@@ -1,0 +1,186 @@
+/*style inputs , select elements and textareas*/
+textarea{
+width :100%;
+padding:12px;
+border : 1px solid #ccc;
+border-radius : 4px;
+box-sizing: border-box;
+resize:vertical;
+}
+input[type=email],select {
+width :25%;
+padding:12px;
+border : 1px solid #ccc;
+border-radius : 5px;
+box-sizing: border-box;
+resize:vertical;
+}
+input[type=text], select {
+width :25%;
+padding:12px;
+border : 1px solid #ccc;
+border-radius : 5px;
+box-sizing: border-box;
+resize:vertical;
+}
+input[type=password], select {
+width :25%;
+padding:12px;
+border : 1px solid #ccc;
+border-radius : 5px;
+box-sizing: border-box;
+resize:vertical;
+}
+/*style the label to display next to the inputs*/
+
+label {
+padding: 12px 12px 12px 0px;
+display : inline-block ;
+}
+/*style login button*/
+button[type=Submit]{
+background-color: #4CAF50;
+padding:12px 10px;
+border :none ;
+border-radius: 5px;
+cursor :pointer;
+float: center;
+}
+
+/*style submit button*/
+input[type=Submit]{
+background-color: #4CAF50;
+padding:10px 10px;
+border :none ;
+border-radius: 5px;
+cursor :pointer;
+float: center;
+}
+/**/
+/* style the container*/
+.container {
+border-radius:1px;
+background-color: #f2f2f2;
+padding:2px;
+}
+
+/*floating column for labels: 25% width*/
+.col-25 {
+float : center;
+width : 25%;
+margin :6px;
+}
+
+/*responsive layut when the screen is less than 600px wide, make the two columns stack to each other instead of next to each other*/
+
+@media screen and (max-width: 600px){
+
+.col-25, .col-75,
+input[type=submit]{
+width : 100%;
+margin-top:0;
+}}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+}
+/*viewing answer page*/
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: #99d6ff;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*tablestyling*/
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+/*article styling*/
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+/* top navigation bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+
+/*responsiveness*/
+div.example {
+  background-color: lightgrey;
+  padding: 5px;
+}
+
+@media screen and (min-width: 300px) {
+  div.example {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  div.example {
+    font-size: 5px;
+  }
+}
